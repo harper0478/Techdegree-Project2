@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* BASE STYLES */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+a {
+   color: darkorange;
+   font-weight: 600;
+   font-size: 0.9375em; /* 15px */
+   text-transform: uppercase;
+   text-decoration: none; 
+}
+
+a:hover {
+    color: darkorange;
+}
+
+h2 {
+    color: dimgrey;
+}
+
+p {
+    font-family: 'Sans Pro', sans-serif;
+    color: dimgrey;
+}
+/*********************************************/
+
+
+/**************HEADER***/
+
+header {
+    text-align: center;
+}
+
+header p {
+    font-size: 1.4375em; /* 23px */
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.main-nav {
+    margin-bottom: 50px;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.main-nav li a {
+    padding: 10px 20px;
+}
+/*********************************************/
+
+
+/****************INTRO***/
+
+.intro img {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.intro p {
+    font-size: 1em; /* 16px */
+    line-height: 1.4;
+    margin: 0 0 80px 0;
+    padding: 20px 7px 0;
+    color: grey;
+    font-weight: 400;
+}
+/*********************************************/
+
+
+/****************MAIN***/
+
+main {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+main img {
+    width: 100%;
+    padding: 0 15px;
+}
+
+#portfolio {
+    margin: 0 0 45px 0;
+    text-transform: uppercase;
+    font-size: 1.25em; /* 18px */
+    font-weight: 600;
+}
+main h2 {
+    font-size: 1.4375em; /* 23px */
+    margin-top: 25px; 
+}
+
+main p {
+    margin-bottom: 35px;
+    padding: 0 20px;
+}
+
+hr {
+    width: 90%;
+    opacity: .4;
+}
+/*********************************************/
+
+
+/****************SKILLS***/
+
+.skills-container {
+    width: 100%;
+    text-align: center;
+}
+
+.skills-container h2 {
+    text-transform: uppercase;
+    font-size: 1.25em; /* 18px */
+    font-weight: 600;
+    margin: 30px 0;
+    color: darkorange;
+}
+
+.skills-container p {
+    padding: 0 20px;
+}
+
+.skills-container ul {
+    list-style-type: none;
+    margin: 0 0 65px 0;
+    padding: 0 20px;
+}
+
+.skills-container li {
+    font-weight: 600;
+    background-color: lightgrey;
+    margin-top: 3px;
+    padding: 10px 0;
+    border-bottom: 1px solid darkgrey;
+}
+
+.skills-container li:hover {
+    background-color: darkorange;
+    color: white;
+    opacity: .4;
+}
+
+span {
+    font-weight: 600;
+}
+/*********************************************/
+
+
+/****************FOOTER***/
+
+footer {
+    width: 100%;
+}
+
+footer ul {
+    display: none;
+}
+
+footer p {
+    font-weight: 600;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-size: 0.9375em; /* 15px */
+}
+
+footer p a {
+    float: right;
+    margin-left: 70px;
+    font-size: 0.8125em; /* 13px */
+}
+/**********************************************************************************/
+
+
+
+
+
+
+
+/****************MEDIA QUERIES***/
+
+@media (min-width: 768px) {
+
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /****************HEADER***/
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav p {
+        padding-top: 50px;
+        margin-bottom: 35px;
+    }
+    nav {
+        margin-bottom: 70px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+    /*********************************************/
+
+
+    /****************INTRO***/ 
+
+    header {
+        margin: 0 auto;
+    }
+
+
+    header .intro {
+        width: 90%;
+        margin: 0 auto 100px;
+    }
+
+    header .intro img {
+        width: 40%;
+        padding: 0;
+        box-shadow: 0 2px 3px #ccc;
+    }
+
+    header .intro p {
+        width: 60%;
+        float: left;
+        padding: 0 15px 0 0;
+        margin: 0;
+        font-size: 1.25em; /* 18px */
+        text-align: left;
+        line-height: 1.6;
+    }
+     /*********************************************/
+
+
+     /****************MAIN***/
+
+    main {
+       margin: 0 auto;
+       overflow: hidden;
+       text-align: center;
+       max-width: 769px;
+    }
+
+    .marketing,
+    .search,
+    .travel,
+    .spots,
+    .gallery,
+    .calc {
+        width: 50%;
+        float: left;
+    }
+
+
+    .marketing img {
+        padding: 0 5px 0 0;
+    }
+
+    .search img {
+        padding: 0 0 0 5px;
+    }
+
+    .travel img {
+        padding: 0 5px 0 0;
+    }
+    .spots img {
+        padding: 0 0 0 5px;
+    }
+
+    .gallery img {
+        padding: 0 5px 0 0;
+    }
+
+    .calc img {
+        padding: 0 0 0 5px;
+    }
+     /*********************************************/
+
+
+    /****************SKILLS***/
+    .skills-container {
+        margin-top: 100px;
+    }
+
+    .skills-container h2 {
+        padding: 20px 0;
+        background-color: dimgrey;
+        color: darkorange;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-container p {
+        width: 70%;
+        margin: 45px auto;
+        font-size: 1.25em; /* 18px */
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .skills-container ul {
+        width: 90%;
+        margin: 0 auto 60px;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    footer .to-top {
+        display: none;
+    }
+
+    footer p {
+        padding: 0;
+    }
+
+    footer ul {
+        display: block;
+        list-style-type: none;
+        float: right;
+    }
+
+    footer ul li {
+        text-decoration: none;
+        display: inline;
+        margin-left: 40px;
+    }
+
+    footer li a {
+        color: darkorange;
+    }
+     /**********************************************************************************/
+
+
+
+
+    @media (min-width: 1024px) {
+
+        /****************HEADER***/
+        #wrapper {
+            width: 100%;
+            max-width: 1025px; 
+        }
+
+        header {
+            width: 90%;
+            max-width: 1025px;
+        }
+
+        header .main-nav {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header .main-nav p {
+            float: left;
+            margin: 0;
+        }
+
+        header .main-nav nav {
+            margin: 0;
+        }
+
+        header .main-nav ul {
+            float: right;
+            padding-top: 50px;
+        }
+
+        header .main-nav li a {
+            padding: 0;
+            margin-left: 30px;
+            color: dimgrey;
+        }
+
+        header .main-nav li a:hover {
+            color: darkorange;
+        }
+        /*********************************************/
+
+
+        /****************INTRO***/ 
+
+        header .intro {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        header .intro img {
+            width: 34%;
+            float: right;
+            box-shadow: 0 2px 3px #ccc;
+        }
+        /*********************************************/
+
+
+        /****************MAIN***/ 
+
+        main {
+            width: 90%;
+            padding: 50px 25px;
+            max-width: 1025px;
+            background-color: white;
+        }
+
+        main #portfolio {
+            font-size: 22px;
+        }
+
+
+        main .marketing img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+    
+        main .search img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+    
+        main .travel img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+        main .spots img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+    
+        main .gallery img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+    
+        main .calc img {
+            width: 100%;
+            padding: 0;
+            box-shadow: 0 2px 3px rgb(172, 172, 172);
+        }
+
+        .marketing,
+        .search,
+        .travel,
+        .spots,
+        .gallery,
+        .calc {
+            width: 33.3%;
+            float: left;
+            padding: 0 5px;
+        }
+
+        hr {
+            width: 70%;
+            margin-top: 25px;
+        }
+        /*********************************************/
+
+
+        /****************SKILLS***/ 
+
+        .skills-container {
+            width: 90%;
+            margin: 70px auto;
+            max-width: 1024px;
+        }
+
+        .skills-container h2 {
+            width: 100%;
+            
+        }
+
+        .skills-container ul {
+            width: 90%;
+            padding: 0;
+        }
+
+        .skills-container .email {
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        .skills-container .phone {
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .skills-container span {
+            padding: 0 8px;
+        }
+        /*********************************************/
+
+
+        /****************FOOTER***/ 
+
+        footer {
+            width: 90%;
+            height: 80px;
+            max-width: 1024px;
+        }
+
+        footer ul {
+            margin-top: 10px;
+        }
+
+        footer ul li a {
+            font-size: 1.25em; /* 18px */
+            color: dimgrey;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 1.25em; /* 18px */
+        }
+
+        
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+}
